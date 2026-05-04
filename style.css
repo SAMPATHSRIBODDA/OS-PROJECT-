@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #0f1117;
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+.container {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #2a2a3a;
+    padding-bottom: 16px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #7dd3fc;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+.input-section {
+    background: #1a1b26;
+    border: 1px solid #2a2a3a;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.input-section h2 {
+    font-size: 0.85rem;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.field-group {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.field label {
+    font-size: 0.78rem;
+    color: #9ca3af;
+}
+
+.field input {
+    background: #0f1117;
+    border: 1px solid #374151;
+    color: #e0e0e0;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.field input:focus {
+    border-color: #7dd3fc;
+}
+
+#frameCount {
+    width: 120px;
+}
+
+#pageString {
+    width: 100%;
+    min-width: 300px;
+}
+
+.field-wide {
+    flex: 1;
+}
+
+button#runBtn {
+    background: #1d4ed8;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 4px;
+}
+
+button#runBtn:hover {
+    background: #2563eb;
+}
+
+.hint {
+    font-size: 0.75rem;
+    color: #4b5563;
+    margin-top: 10px;
+}
+
+.hint span {
+    color: #6b7280;
+}
+
+/* Results */
+#resultsSection {
+    display: none;
+}
+
+#resultsSection h2 {
+    font-size: 0.85rem;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    border: 1px solid #2a2a3a;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+}
+
+thead tr {
+    background: #1a1b26;
+    border-bottom: 1px solid #2a2a3a;
+}
+
+thead th {
+    padding: 10px 16px;
+    text-align: left;
+    color: #6b7280;
+    font-weight: normal;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #1e1e2e;
+    transition: background 0.1s;
+}
+
+tbody tr:hover {
+    background: #1a1b26;
+}
+
+tbody td {
+    padding: 10px 16px;
+    color: #d1d5db;
+}
+
+.hit {
+    color: #4ade80;
+    font-weight: bold;
+}
+
+.fault {
+    color: #f87171;
+    font-weight: bold;
+}
+
+.algo-tag {
+    color: #fbbf24;
+    font-size: 0.8rem;
+}
+
+.frame-cell {
+    font-family: 'Courier New', monospace;
+    color: #93c5fd;
+    letter-spacing: 2px;
+}
+
+/* Summary */
+#summary {
+    display: none;
+    gap: 16px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.summary-card {
+    background: #1a1b26;
+    border: 1px solid #2a2a3a;
+    border-radius: 8px;
+    padding: 16px 24px;
+    flex: 1;
+    min-width: 140px;
+    text-align: center;
+}
+
+.summary-card .label {
+    font-size: 0.75rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.summary-card .value {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+#totalHits {
+    color: #4ade80;
+}
+
+#totalFaults {
+    color: #f87171;
+}
+
+#hitRate {
+    color: #7dd3fc;
+}
